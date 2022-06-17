@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --clr-pry-1: hsl(31, 77%, 52%);
+  --clr-pry-2: hsl(184, 100%, 22%);
+  --clr-pry-3: hsl(179, 100%, 13%);
+  --clr-neutral-1: hsla(0, 0%, 100%, 0.75);
+  --clr-neutral-2: hsl(0, 0%, 95%);
+  --ff-pry-1: "Lexend Deca", sans-serif;
+  --ff-pry-2: "Big Shoulders Display", cursive;
+}
+
+body {
+  font-family: var(--ff-pry-1);
+  line-height: 1.5;
+}
+
+.container {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  padding: 0 3rem;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  /* display: flex; */
+  max-width: 56.25rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.article {
+  padding: 2.5rem;
+}
+
+.article--sedan {
+  background-color: var(--clr-pry-1);
+}
+
+.article--suv {
+  background-color: var(--clr-pry-2);
+}
+
+.article--luxury {
+  background-color: var(--clr-pry-3);
+}
+
+picture {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.heading-primary {
+  font-family: var(--ff-pry-2);
+  margin-bottom: 2rem;
+  color: var(--clr-neutral-2);
+}
+
+.main-content {
+  margin-bottom: 4rem;
+  color: var(--clr-neutral-1);
+}
+
+.btn {
+  text-decoration: none;
+  background-color: var(--clr-neutral-2);
+  padding: 0.8rem 1.2rem;
+  border-radius: 6rem;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+
+.btn--sedan {
+  color: var(--clr-pry-1);
+}
+
+.btn--sedan:link,
+.btn--sedan:hover {
+  background-color: inherit;
+  color: var(--clr-neutral-2);
+  border: 2px solid var(--clr-neutral-2);
+}
+
+.btn--suv {
+  color: var(--clr-pry-2);
+}
+
+.btn--suv:link,
+.btn--suv:hover {
+  background-color: inherit;
+  color: var(--clr-neutral-2);
+  border: 2px solid var(--clr-neutral-2);
+}
+
+.btn--luxury {
+  color: var(--clr-pry-3);
+}
+
+.btn--luxury:link,
+.btn--luxury:hover {
+  background-color: inherit;
+  color: var(--clr-neutral-2);
+  border: 2px solid var(--clr-neutral-2);
+}
